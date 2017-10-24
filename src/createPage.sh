@@ -1,9 +1,7 @@
 #!/bin/bash
-pwd
 cd $(dirname $0)
 . ../lib/config.sh
 set -e
-exit 0
 
 SHELL_NAME=$(basename ${0})
 
