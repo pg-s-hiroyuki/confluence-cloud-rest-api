@@ -1,0 +1,20 @@
+{
+    "ancestors": [
+      {
+        "id": "#parent_id#"
+      }
+    ],
+    "body": {
+      "storage": {
+        "representation": "storage",
+        "value": "#content#"
+      }
+    },
+    "id": "111111111", 
+    "space": {
+      "key": "#space_key#"
+    },
+    "status": "draft",
+    "title": "#title#",
+    "type": "page"
+  }
