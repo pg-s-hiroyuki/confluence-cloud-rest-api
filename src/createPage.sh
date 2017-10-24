@@ -1,9 +1,12 @@
 #!/bin/bash
+pwd
+cd $(dirname $0)
 . ../lib/config.sh
 set -e
+exit 0
 
 SHELL_NAME=$(basename ${0})
-cd $(dirname $0)
+
 
 function usage {
   cat <<- __EOF__
@@ -14,10 +17,10 @@ function usage {
 		  [必須] -p parent_id 作成するページ親のページIDを指定します
 		  [必須] -t title 作成するページのタイトルを指定します
 		  [任意] -b body 作成するページの内容を指定します
-			[任意] -v postするjsonファイルを削除しないで残します
+		  [任意] -v postするjsonファイルを削除しないで残します
 
 		usage:
-		  ${SHELL_NAME}
+		  ${SHELL_NAME} -s ENJOY -t "new title" -p 62783547 -b "content"
 __EOF__
   exit 1
 }
