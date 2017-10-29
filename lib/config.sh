@@ -1,6 +1,6 @@
 #!/bin/bash
 
-INSTANCE="psportal"
+INSTANCE="{instance name}"
 HOST="${INSTANCE}.atlassian.net"
 USER="{user}"
 PASS="{password}"
